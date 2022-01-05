@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F806177F2785F00E00643CE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F806177E2785F00E00643CE6 /* Extensions.swift */; };
 		F80F5B9E2784821D00A1E339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F5B9D2784821D00A1E339 /* AppDelegate.swift */; };
 		F80F5BA02784821D00A1E339 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F5B9F2784821D00A1E339 /* SceneDelegate.swift */; };
 		F80F5BA22784821D00A1E339 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F5BA12784821D00A1E339 /* ConversationsViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F806177E2785F00E00643CE6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F80F5B9A2784821D00A1E339 /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80F5B9D2784821D00A1E339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F80F5B9F2784821D00A1E339 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				F80F5B9D2784821D00A1E339 /* AppDelegate.swift */,
 				F80F5B9F2784821D00A1E339 /* SceneDelegate.swift */,
+				F806177E2785F00E00643CE6 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				F80F5BC027848C0C00A1E339 /* NewConversationViewController.swift in Sources */,
 				F80F5BA22784821D00A1E339 /* ConversationsViewController.swift in Sources */,
 				F80F5BBE27848BDE00A1E339 /* VideoPlayerViewController.swift in Sources */,
+				F806177F2785F00E00643CE6 /* Extensions.swift in Sources */,
 				F80F5B9E2784821D00A1E339 /* AppDelegate.swift in Sources */,
 				F80F5BC227848C2C00A1E339 /* ProfileViewController.swift in Sources */,
 				F80F5BA02784821D00A1E339 /* SceneDelegate.swift in Sources */,
