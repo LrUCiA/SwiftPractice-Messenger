@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Messenger
 //
-//  Created by LrUCiA on 2022/01/04.
+//  Created by LrUCiA.
 //
 
 import UIKit
