@@ -222,3 +222,19 @@ extension RegisterViewController: UITextFieldDelegate {
     }
     
 }
+
+extension RegisterViewController:UIImagePickerControllerDelegate {
+    
+    func presentPhotoActionSheet() {
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        <#code#>
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        <#code#>
+    }
+    
+}
