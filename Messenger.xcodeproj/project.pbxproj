@@ -21,6 +21,7 @@
 		F80F5BBE27848BDE00A1E339 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F5BBD27848BDE00A1E339 /* VideoPlayerViewController.swift */; };
 		F80F5BC027848C0C00A1E339 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F5BBF27848C0C00A1E339 /* NewConversationViewController.swift */; };
 		F80F5BC227848C2C00A1E339 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F5BC127848C2C00A1E339 /* ProfileViewController.swift */; };
+		F84CB62727AD0AFB007F1562 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CB62627AD0AFB007F1562 /* DatabaseManager.swift */; };
 		F8FFEBF627AC03140013F0F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8FFEBF527AC03140013F0F5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		F80F5BBD27848BDE00A1E339 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		F80F5BBF27848C0C00A1E339 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		F80F5BC127848C2C00A1E339 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F84CB62627AD0AFB007F1562 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		F8FFEBF527AC03140013F0F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +66,6 @@
 				6653A2F6E26EE0750CCEA008 /* Pods-Messenger.debug.xcconfig */,
 				7C35596BEC72E25D24BE0A2A /* Pods-Messenger.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,6 +151,7 @@
 				F80F5B9D2784821D00A1E339 /* AppDelegate.swift */,
 				F80F5B9F2784821D00A1E339 /* SceneDelegate.swift */,
 				F806177E2785F00E00643CE6 /* Extensions.swift */,
+				F84CB62627AD0AFB007F1562 /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -289,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F80F5BB827848B7700A1E339 /* LoginViewController.swift in Sources */,
+				F84CB62727AD0AFB007F1562 /* DatabaseManager.swift in Sources */,
 				F80F5BBA27848B9400A1E339 /* RegisterViewController.swift in Sources */,
 				F80F5BC027848C0C00A1E339 /* NewConversationViewController.swift in Sources */,
 				F80F5BA22784821D00A1E339 /* ConversationsViewController.swift in Sources */,
