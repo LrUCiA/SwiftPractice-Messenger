@@ -22,7 +22,7 @@
 		F80F5BC027848C0C00A1E339 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F5BBF27848C0C00A1E339 /* NewConversationViewController.swift */; };
 		F80F5BC227848C2C00A1E339 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F5BC127848C2C00A1E339 /* ProfileViewController.swift */; };
 		F84CB62727AD0AFB007F1562 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CB62627AD0AFB007F1562 /* DatabaseManager.swift */; };
-		F8FFEBF627AC03140013F0F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8FFEBF527AC03140013F0F5 /* GoogleService-Info.plist */; };
+		F84CB62927AD2BB3007F1562 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F84CB62827AD2BB3007F1562 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +45,7 @@
 		F80F5BBF27848C0C00A1E339 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		F80F5BC127848C2C00A1E339 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F84CB62627AD0AFB007F1562 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
-		F8FFEBF527AC03140013F0F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F84CB62827AD2BB3007F1562 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 				F80F5BB22784898B00A1E339 /* Views */,
 				F80F5BB12784897700A1E339 /* Controllers */,
 				F80F5BAB2784821D00A1E339 /* Info.plist */,
-				F8FFEBF527AC03140013F0F5 /* GoogleService-Info.plist */,
+				F84CB62827AD2BB3007F1562 /* GoogleService-Info.plist */,
 			);
 			path = Messenger;
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F80F5BAA2784821D00A1E339 /* LaunchScreen.storyboard in Resources */,
-				F8FFEBF627AC03140013F0F5 /* GoogleService-Info.plist in Resources */,
+				F84CB62927AD2BB3007F1562 /* GoogleService-Info.plist in Resources */,
 				F80F5BA72784821D00A1E339 /* Assets.xcassets in Resources */,
 				F80F5BA52784821D00A1E339 /* Main.storyboard in Resources */,
 			);
