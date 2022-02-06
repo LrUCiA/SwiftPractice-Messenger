@@ -175,7 +175,7 @@ class RegisterViewController: UIViewController {
                                       height: 52)
     }
     
-    @objc private func registerButtonTapped() { //로그인 유효성 검사
+    @objc private func registerButtonTapped() { 
         
         emailField.resignFirstResponder()
         passwordField.resignFirstResponder()
@@ -210,7 +210,9 @@ class RegisterViewController: UIViewController {
             
             FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult, error in
                 guard authResult != nil, error == nil else {
-                    print("Error creating user.")
+                    if let error = error {
+                    print("Error creating user.\(error)")
+                    }
                     return
                 }
                 
