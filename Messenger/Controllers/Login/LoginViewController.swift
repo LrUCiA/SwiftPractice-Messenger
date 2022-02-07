@@ -204,6 +204,7 @@ func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginMana
         return
     }
     
+    
     let facebookRequest = FBSDKLoginKit.GraphRequest(graphPath: "me",
                                                      parameters: ["fields": "email, name"],
                                                      tokenString: token,
