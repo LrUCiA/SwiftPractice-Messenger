@@ -204,24 +204,40 @@ func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginMana
         return
     }
     
-    let credential = FacebookAuthProvider.credential(withAccessToken: token)
+    let facebookRequest = FBSDKLoginKit.GraphRequest(graphPath: "me",
+                                                     parameters: ["fields": "email, name"],
+                                                     tokenString: token,
+                                                     version: nil,
+                                                     httpMethod: .get)
     
-    FirebaseAuth.Auth.auth().signIn(with: credential, completion: { [weak self] authResult, error in
-        guard let strongSelf = self else {
+    facebookRequest.start(completion: { _, result, error in
+        guard let result = result as? [String: Any],
+              error == nil else {
+            print("Failed to make facebook graph request")
             return
         }
+
+        print("\(result)")
         
-        guard authResult != nil, error == nil else {
-            if let error = error {
-                print("Facebook credential login failed, MFA may be needed - \(error)")
+        let credential = FacebookAuthProvider.credential(withAccessToken: token)
+        
+        FirebaseAuth.Auth.auth().signIn(with: credential, completion: { [weak self] authResult, error in
+            guard let strongSelf = self else {
+                return
             }
             
-            return
-        }
-        
-        print("Successfully logged user in")
-        strongSelf.navigationController?.dismiss(animated: true, completion: nil)
-        
+            guard authResult != nil, error == nil else {
+                if let error = error {
+                    print("Facebook credential login failed, MFA may be needed - \(error)")
+                }
+                
+                return
+            }
+            
+            print("Successfully logged user in")
+            strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+            
+        })
     })
 }
 }
