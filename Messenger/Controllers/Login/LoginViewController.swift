@@ -218,7 +218,17 @@ func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginMana
             return
         }
 
-        print("\(result)")
+        guard let userName = result["name"] as? String,
+              let email = result["email"] as? String else {
+                  print("Failed to get email and name from fb result")
+                  return
+              }
+        let nameComponents = userName.components(separatedBy: " ")
+        guard nameComponents.count == 2 else {
+            return
+        }
+        let firstName = nameComponents[0]
+        let lasstName = nameComponents[1]
         
         let credential = FacebookAuthProvider.credential(withAccessToken: token)
         
