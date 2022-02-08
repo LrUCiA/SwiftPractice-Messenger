@@ -223,12 +223,22 @@ func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginMana
                   print("Failed to get email and name from fb result")
                   return
               }
+        
         let nameComponents = userName.components(separatedBy: " ")
         guard nameComponents.count == 2 else {
             return
         }
+        
         let firstName = nameComponents[0]
         let lasstName = nameComponents[1]
+        
+        DatabaseManager.shared.userExists(with: email, completion: { exists in
+            if !exists {
+                DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: firstName,
+                                                                    lastName: lasstName,
+                                                                    emailAddress: email))
+            }
+        })
         
         let credential = FacebookAuthProvider.credential(withAccessToken: token)
         
