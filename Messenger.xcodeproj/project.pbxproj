@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EAABD35DCE955144873AB6AF /* Pods_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F308B971E35F2C84937F64 /* Pods_Messenger.framework */; };
 		F806177F2785F00E00643CE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F806177E2785F00E00643CE6 /* Extensions.swift */; };
 		F80F5B9E2784821D00A1E339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F5B9D2784821D00A1E339 /* AppDelegate.swift */; };
 		F80F5BA02784821D00A1E339 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F5B9F2784821D00A1E339 /* SceneDelegate.swift */; };
@@ -23,7 +22,24 @@
 		F80F5BC227848C2C00A1E339 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F5BC127848C2C00A1E339 /* ProfileViewController.swift */; };
 		F84CB62727AD0AFB007F1562 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CB62627AD0AFB007F1562 /* DatabaseManager.swift */; };
 		F8912EF827AE6BD9003E0EFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8912EF727AE6BD9003E0EFA /* GoogleService-Info.plist */; };
+		F8FA23E727B3B13E00C5134B /* Pods_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F308B971E35F2C84937F64 /* Pods_Messenger.framework */; };
+		F8FA23E827B3B13E00C5134B /* Pods_Messenger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35F308B971E35F2C84937F64 /* Pods_Messenger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8FA23F027B3B20B00C5134B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = F8FA23EF27B3B20B00C5134B /* GoogleSignIn */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8FA23E927B3B13E00C5134B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F8FA23E827B3B13E00C5134B /* Pods_Messenger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		35F308B971E35F2C84937F64 /* Pods_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAABD35DCE955144873AB6AF /* Pods_Messenger.framework in Frameworks */,
+				F8FA23E727B3B13E00C5134B /* Pods_Messenger.framework in Frameworks */,
+				F8FA23F027B3B20B00C5134B /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,12 +203,16 @@
 				F80F5B972784821D00A1E339 /* Frameworks */,
 				F80F5B982784821D00A1E339 /* Resources */,
 				4E2662DD55AA147D66D75C4A /* [CP] Embed Pods Frameworks */,
+				F8FA23E927B3B13E00C5134B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Messenger;
+			packageProductDependencies = (
+				F8FA23EF27B3B20B00C5134B /* GoogleSignIn */,
+			);
 			productName = Messenger;
 			productReference = F80F5B9A2784821D00A1E339 /* Messenger.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +241,9 @@
 				Base,
 			);
 			mainGroup = F80F5B912784821D00A1E339;
+			packageReferences = (
+				F8FA23EA27B3B16B00C5134B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = F80F5B9B2784821D00A1E339 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -453,6 +477,8 @@
 				DEVELOPMENT_TEAM = ZKL7JQF77R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Messenger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to select a photo for your profile";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -483,6 +509,8 @@
 				DEVELOPMENT_TEAM = ZKL7JQF77R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Messenger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to select a photo for your profile";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -524,6 +552,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8FA23EA27B3B16B00C5134B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8FA23EF27B3B20B00C5134B /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8FA23EA27B3B16B00C5134B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F80F5B922784821D00A1E339 /* Project object */;
 }

@@ -56,6 +56,9 @@
 				88E6CCE6CA37F310158842B0265E1714 /* PBXTargetDependency */,
 			);
 			name = FBAEMKit;
+			packageProductDependencies = (
+				F8FA23EE27B3B19B00C5134B /* GoogleSignIn */,
+			);
 			productName = FBAEMKit;
 		};
 		8EA62FEAB23070050EFD4D4508D659E5 /* FBSDKCoreKit_Basics */ = {
@@ -4953,6 +4956,9 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			packageReferences = (
+				F8FA23ED27B3B19B00C5134B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 6C035E05A361FCA73197DB4AA5CED684 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -7330,6 +7336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8FA23ED27B3B19B00C5134B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8FA23EE27B3B19B00C5134B /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8FA23ED27B3B19B00C5134B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
