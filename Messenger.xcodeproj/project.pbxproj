@@ -24,7 +24,6 @@
 		F8912EF827AE6BD9003E0EFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8912EF727AE6BD9003E0EFA /* GoogleService-Info.plist */; };
 		F8FA23E727B3B13E00C5134B /* Pods_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F308B971E35F2C84937F64 /* Pods_Messenger.framework */; };
 		F8FA23E827B3B13E00C5134B /* Pods_Messenger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35F308B971E35F2C84937F64 /* Pods_Messenger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F8FA23F027B3B20B00C5134B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = F8FA23EF27B3B20B00C5134B /* GoogleSignIn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,7 +69,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8FA23E727B3B13E00C5134B /* Pods_Messenger.framework in Frameworks */,
-				F8FA23F027B3B20B00C5134B /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +209,6 @@
 			);
 			name = Messenger;
 			packageProductDependencies = (
-				F8FA23EF27B3B20B00C5134B /* GoogleSignIn */,
 			);
 			productName = Messenger;
 			productReference = F80F5B9A2784821D00A1E339 /* Messenger.app */;
@@ -242,7 +239,6 @@
 			);
 			mainGroup = F80F5B912784821D00A1E339;
 			packageReferences = (
-				F8FA23EA27B3B16B00C5134B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = F80F5B9B2784821D00A1E339 /* Products */;
 			projectDirPath = "";
@@ -552,25 +548,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F8FA23EA27B3B16B00C5134B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F8FA23EF27B3B20B00C5134B /* GoogleSignIn */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F8FA23EA27B3B16B00C5134B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
-			productName = GoogleSignIn;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F80F5B922784821D00A1E339 /* Project object */;
 }
